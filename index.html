@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deep Thought</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <img src="https://deepthought.education/assets/images/logo/logo.svg">
+  </div>
+
+  <div class="header-right">
+    <div class="header-icons">
+      <!-- HOME -->
+      <button class="icon-btn">
+        <svg width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="18" fill="#2F80ED"/>
+          <path d="M11 19L18 13L25 19V25H20V21H16V25H11V19Z" fill="#fff"/>
+        </svg>
+      </button>
+
+      <!-- TOOLS -->
+      <button class="icon-btn">
+        <svg width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="18" fill="#2F80ED"/>
+          <path d="M22.7 14.3L21.7 13.3L17 18L13.3 14.3L12.3 15.3L16 19L12.3 22.7L13.3 23.7L17 20L21.7 24.7L22.7 23.7L19 20L22.7 16.3Z" fill="#fff"/>
+        </svg>
+      </button>
+
+      <!-- NOTIFICATION -->
+      <button class="icon-btn">
+        <svg width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="18" fill="#2F80ED"/>
+          <path d="M18 24C19.1 24 20 23.1 20 22H16C16 23.1 16.9 24 18 24ZM24 21V17C24 14.2 22.4 12 20 11.4V11C20 9.9 19.1 9 18 9C16.9 9 16 9.9 16 11V11.4C13.6 12 12 14.2 12 17V21L10 23V24H26V23L24 21Z" fill="#fff"/>
+          <circle cx="25" cy="11" r="4" fill="#EB5757"/>
+        </svg>
+      </button>
+
+      <img class="avatar" src="https://i.pravatar.cc/40">
+      <button class="icon-btn">⋮</button>
+    </div>
+  </div>
+</header>
+
+<!-- LEFT SLIM BAR -->
+<div class="left-bar">
+  <div class="arrow-btn" id="openJourney">➜</div>
+  <div class="step-box">1</div>
+</div>
+
+<!-- JOURNEY BOARD -->
+<div class="journey-panel hidden" id="journeyPanel">
+  <div class="journey-header">
+    <span>Journey Board</span>
+    <span class="close-btn" id="closeJourney">←</span>
+  </div>
+  <ul id="journeyList"></ul>
+</div>
+
+<!-- RIGHT NOTICE BOARD -->
+<div class="notice-board">
+  <div class="notice-close">✕</div>
+  <div class="notice-text">
+    N<br>O<br>T<br>I<br>C<br>E<br><br>B<br>O<br>A<br>R<br>D
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="page">
+  <div class="content">
+
+    <div class="content-header">
+      <h2 class="title">Technical Project Management</h2>
+      <button class="submit-btn">Submit task</button>
+    </div>
+
+    <div class="info-box">
+      <h4>Explore the world of management</h4>
+      <p>
+        As a project manager, you play an important role in leading a project
+        through initiation, planning, execution, monitoring, controlling and completion.
+      </p>
+    </div>
+
+    <div class="cards" id="assetGrid"></div>
+
+  </div>
+</div>
+
+<!-- RIGHT FLOATING ACTION BUTTONS -->
+<div class="right-actions">
+  <!-- Help -->
+  <button class="fab">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M12 18H12.01M9.09 9A3 3 0 1114.91 11C13.67 11.62 13 12.5 13 14"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Group -->
+  <button class="fab">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M17 20V18A4 4 0 0013 14H5A4 4 0 001 18V20M23 20V18A4 4 0 0019 14M16 3.13A4 4 0 0116 10M9 10A4 4 0 109 2A4 4 0 009 10Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Calendar -->
+  <button class="fab">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M3 9H21M8 3V5M16 3V5M5 21H19A2 2 0 0021 19V7A2 2 0 0019 5H5A2 2 0 003 7V19A2 2 0 005 21Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
